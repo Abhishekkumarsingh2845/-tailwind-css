@@ -1,7 +1,7 @@
 // import React from "react";
 import image1 from "./../Asset/Image/dl.beatsnoop 1.png";
 
-function Login() {
+function SignIn() {
   return (
     <div className="flex flex-row">
       <div className="my-12">
@@ -10,14 +10,10 @@ function Login() {
 
       <div className="my-12 mx-96   p-8  w-full max-w-md  ">
         <div className="">
-          <p className=" text-4xl">Create an account</p>
-          <p className=" text-xl mt-2">Enter Your Details Below</p>
+          <p className=" text-4xl">Log in to Exclusive</p>
+          <p className=" text-xl mt-2">Enter your details below</p>
         </div>
         <div className="  mt-12 flex flex-col">
-          <input
-            placeholder="Name"
-            className="p-2  border-b-grey-500 border-b-2 mt-4"
-          />
           <input
             placeholder="Email or Phone Number"
             className="p-2  border-b-grey-500 border-b-2 mt-4"
@@ -27,21 +23,17 @@ function Login() {
             className="p-2  border-b-grey-500 border-b-2 mt-4"
           />
         </div>
-        <div className=" flex flex-col  mt-10">
-          <button className=" rounded  text-white    py-2 bg-red-600">
-            Create Account
+        <div className=" flex flex-row   space-x-24 mt-10">
+          <button className=" rounded  text-white  px-4   bg-red-600">
+            Log In
           </button>
-          <button className=" mt-6 bg-slate-100   py-2 border-grey-600 border-b-2 rounded ">
-            Sign Up with Account
-          </button>
-        </div>
-        <div className="flex flex-row mt-6 space-x-2">
-          <p>Already have account?</p>
-          <p>Log In</p>
+          <p className=" mt-6    text-red-500">
+            <a href="">Forgot Password</a>
+          </p>
         </div>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default SignIn;
