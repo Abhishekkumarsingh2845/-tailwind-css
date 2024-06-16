@@ -4,6 +4,7 @@ import NavBar from "./Component/NavBar";
 import Footer from "./Component/Footer";
 import SignUp from "./Screen/SignUp";
 import SignIn from "./Screen/SignIn";
+import Error from "./Screen/Error";
 
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
     <div className="flex flex-col ">
      <Header/>
      <NavBar/>
- <SignIn/>
+<Error/>
      <Footer/>
     </div>
   );
